@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tennis Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Tennis Journey</h1>
+    <p>Training, competition, and future goals.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="highlights.html">Highlights</a>
+    <a href="contact.html">Goals</a>
+</nav>
+
+<main>
+
+    <div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="images/tennis.jpg" alt="Tennis photo">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/home-action.jpg" alt="Action tennis photo">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/team-photo.jpg" alt="Team tennis photo">
+        </div>
+
+    </div>
+
+    <h2>Welcome</h2>
+
+    <div class="intro-box">
+        <p>
+            This website shares my journey as a tennis player, from growing up training in California
+            to competing at the college level. Tennis has shaped and evolved my discipline, confidence, and future short and long term goals.
+        </p>
+    </div>
+
+    <img src="images/tennis.jpg" alt="College tennis action shot">
+
+    <p>
+        Tennis has been one of the most important parts of my life. Through years of training,
+        tournaments, travel, and college matches, I have developed resilience both on and off the court. A chapter in my life that I'm forever grateful for. 
+    </p>
+
+    <div class="photo-grid">
+
+        <div class="photo-card">
+            <img src="images/home-action.jpg" alt="Tennis match action photo">
+            <p>
+                Competing has taught me how to stay focused under pressure. And have fun doing it!
+            </p>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/racket.jpg" alt="Tennis racket and court">
+            <p>
+                The sport has given me structure, purpose, and lifelong lessons.
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>2026 My Tennis Journey</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>

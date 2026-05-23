@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Schedule</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Tennis Schedule</h1>
+    <p>A look at training, competition, and life as a student-athlete at Loyola.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="highlights.html">Highlights</a>
+    <a href="contact.html">Goals</a>
+</nav>
+
+<main>
+
+    <h2>Life Around Tennis</h2>
+
+    <div class="intro-box">
+        <p>
+            Tennis was not just something I did after school. For most of my life, it shaped my schedule,
+            my weekends, my travel, and sometimes even when I could relax. My day job was tennis. 
+        </p>
+    </div>
+
+    <h3>Junior Tennis</h3>
+    <button class="accordion">Training Weeks</button>
+    <div class="panel">
+        <p>
+            During junior tennis, I trained for long hours each week while balancing school, travel, and tournaments.
+            My training varied on how busy the junior tennis season was, but I trained anywhere from 25-50 hours per week. Some weeks felt like tennis, homework, food, sleep, and repeat.
+        </p>
+    </div>
+
+    <button class="accordion">Tournament Travel</button>
+    <div class="panel">
+        <p>
+            Traveling for tournaments meant early mornings, packed bags, and lots of snacks. It was tiring,
+            but it also created some of my favorite memories. For out of state tournaments, that meant catching a flight with my family or coach at 6 am usually. 
+        </p>
+    </div>
+
+    <button class="accordion">College Tennis</button>
+    <div class="panel">
+        <p>
+            College tennis added another level of responsibility. Practices, lifts, matches, classes, and travel
+            made time management one of the biggest skills I learned. In season, training was 20 hours of hitting a week and 3 to 5 hours of lift, not including matches. And 8 am lift was brutal at times. As a student-athlete, its important to coordinate with faculty, your athletic academic advisor, trainers, and athletic staff to ensure you're on pace and healthy in all aspects.
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <p>2026 My Tennis Journey</p>
+</footer>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
